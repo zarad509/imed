@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thanksgiving Celebration</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="w3-container w3-brown w3-center" style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://static.wikia.nocookie.net/the-adventures-of-the-gladiators-of-cybertron/images/1/1e/Thanksgiving_Turkey.png/revision/latest?cb=20230816073641" alt="Thanksgiving Turkey" style="width: 100px; height: auto; margin-right: 10px;" class="w3-grayscale">
+    <h1>History of Thanksgiving</h1>
+</header>
+
+<!-- Main Content Section -->
+<div class="w3-content w3-margin-top">
+
+    <!-- What Exactly is Thanksgiving Section with Image -->
+<div class="w3-container w3-padding">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Thanksgiving-Brownscombe.jpg" alt="Thanksgiving Painting" class="w3-image w3-round w3-hover-shadow w3-margin-bottom">
+    <h3>What Exactly is Thanksgiving?</h3>
+    <p>Thanksgiving, a U.S. federal holiday celebrated on the fourth Thursday of November, is rooted in a tradition of gratitude and harvest. It originated as a day of giving thanks, inspired by the 1621 Plymouth feast between Pilgrims and the Wampanoag people. The meal typically includes native foods like turkey, potatoes, corn, cranberries, and pumpkin pie. Thanksgiving customs also feature charitable meals, religious services, the Macy’s Parade, and NFL games. The holiday marks the start of the holiday season, followed by Black Friday.</p>
+    <p>Historically, early New England and Virginia colonists observed days of thanksgiving for blessings like harvests and ship arrivals. Thanksgiving became a national holiday in 1789 under George Washington, though it wasn’t consistently observed until Abraham Lincoln’s 1863 proclamation. Congress established Thanksgiving’s current date in 1942 as the fourth Thursday in November.</p>
+</div>
+
+
+    <!-- History Section -->
+    <div class="w3-container w3-padding">
+        <h3>History</h3>
+        <p>Thanksgiving observances predate European settlement in North America, with feasts and days of thanks practiced by various cultures. The Puritans held days of fasting and thanksgiving to seek or express gratitude for blessings. Documented Thanksgiving services were held by Spaniards and French settlers in the 16th century, including a thanksgiving meal in St. Augustine, Florida, in 1565.</p>
+        <p>In Virginia, thanksgiving services were common as early as 1607. The first official Thanksgiving was celebrated by 38 English settlers on December 4, 1619, upon landing at Berkeley Hundred, with their charter requiring an annual day of thanksgiving. This event is now commemorated at Berkeley Plantation each year.</p>
+    </div>
+
+    <!-- Important Events Table Section with Toggle -->
+    <button onclick="toggleAccordion('datesTable')" class="w3-button w3-block w3-brown w3-margin-top">Important Dates in Thanksgiving History</button>
+    <div id="datesTable" class="w3-hide w3-container w3-padding">
+        <table class="w3-table-all">
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>First Thanksgiving at Plymouth</td>
+                <td>November 1621</td>
+            </tr>
+            <tr>
+                <td>Thanksgiving at Berkeley Plantation</td>
+                <td>December 4, 1619</td>
+            </tr>
+            <tr>
+                <td>George Washington's Proclamation</td>
+                <td>November 26, 1789</td>
+            </tr>
+            <tr>
+                <td>Abraham Lincoln’s National Holiday Proclamation</td>
+                <td>October 3, 1863</td>
+            </tr>
+            <tr>
+                <td>Thanksgiving set to Fourth Thursday of November</td>
+                <td>1942</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Debate over The First Thanksgiving Section with Image -->
+<div class="w3-container w3-padding">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/The_First_Thanksgiving_Jean_Louis_Gerome_Ferris.png" alt="The First Thanksgiving Painting" class="w3-image w3-round w3-hover-shadow w3-margin-bottom">
+    <h3>Debate over The First Thanksgiving</h3>
+    <p>Historian James Baker suggests that debates over the “first Thanksgiving” location are minor, arguing that the true origins of the American Thanksgiving lie in the New England Pilgrims’ observances, which were set aside as special days for giving thanks and celebrating freedom of worship. Their Mayflower Compact led to early forms of local governance.</p>
+    <p>In 1963, President John F. Kennedy recognized both Massachusetts and Virginia’s early thanksgiving observances, acknowledging that colonists from each region gave thanks for safety, health, and unity in their new homeland.</p>
+</div>
+
+
+   <!-- Acknowledgment of Indigenous History -->
+<div class="w3-card-4 w3-margin w3-white">
+    <header class="w3-container w3-brown">
+        <h3>Acknowledgment of Indigenous History <span class="w3-badge w3-red">Important</span></h3>
+    </header>
+    <div class="w3-container">
+        <p>While Thanksgiving has become a time for gratitude and family gatherings, it is important to recognize the hardships faced by Native American communities due to colonization. The impact of European settlers disrupted Indigenous ways of life, resulting in the loss of land, culture, and countless lives.</p>
+        <p>We remember and honor the resilience, strength, and enduring cultures of Native Americans. Acknowledging these histories allows us to celebrate this holiday with a greater understanding and respect for all who have shaped the United States.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Native_American_Chiefs_1865.jpg" class="w3-image w3-round w3-hover-shadow w3-margin-top" alt="Native American Chiefs 1865">
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer Section -->
+<footer class="w3-container w3-brown w3-center w3-padding">
+    <p>Learn more about the history and traditions of Thanksgiving.</p>
+    <a href="#header" class="w3-button w3-black">Back to Top</a>
+</footer>
+
+<script>
+    // Function to toggle accordion
+    function toggleAccordion(id) {
+        document.getElementById(id).classList.toggle("w3-show");
+    }
+</script>
+
+</body>
+</html>

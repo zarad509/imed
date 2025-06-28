@@ -1,0 +1,255 @@
+/* Primary Color Scheme */
+:root {
+    --primary-color: #4a90e2;  
+    --secondary-color: #34495e;  
+    --accent-color: #e74c3c;  
+    --background-color: #ffffff;  
+    --text-color: #333;  
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Centered Introduction Section */
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1454405/pexels-photo-1454405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+#introduction::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+}
+
+#introduction h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-in-out 0.5s both; 
+}
+
+#introduction p {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    z-index: 1;
+    line-height: 1.6;
+    animation: fadeIn 3s ease-in-out 1s both; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keyframes for Smoother Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Navbar Background and Text Color */
+.navbar {
+    background-color: var(--primary-color); 
+    color: #fff; 
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #000000;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent-color); 
+}
+
+/* Toggler Button Customization */
+.navbar-toggler {
+    background-color: #ffffff; 
+    border: 2px solid var(--primary-color); 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Dark Icon for Toggler */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(33, 37, 41, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Toggler Button Hover Effect */
+.navbar-toggler:hover {
+    background-color: var(--accent-color); 
+    border-color: #ffffff; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+}
+
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Card Customization */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Button Styling */
+.btn-info {
+    background-color: var(--accent-color);
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #c0392b;  
+}
+
+/* Carousel Styling */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Custom Styling for Activities and Travel Tips Blocks */
+.activities-block, .tips-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.activities-block:hover, .tips-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.activities-block h4, .tips-block h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.activities-block:hover h4, .tips-block:hover h4 {
+    color: var(--primary-color); 
+}
+
+.activities-block p, .tips-block p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.activities-block img, .tips-block img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.4s ease;
+}
+
+.activities-block:hover img, .tips-block:hover img {
+    transform: scale(1.05); 
+}
+
+/* Optional Button Styling Inside Activities and Tips Blocks */
+.activities-block .btn, .tips-block .btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.activities-block .btn:hover, .tips-block .btn:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05); 
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}

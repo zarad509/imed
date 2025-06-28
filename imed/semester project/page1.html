@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-Do Lists - Personal Journal">
+    <meta name="keywords" content="To-Do Lists, Personal Journal">
+    <title>To-Do Lists - Personal Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom Heart Bullet Points */
+        ul.heart-bullets {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.heart-bullets li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        ul.heart-bullets li::before {
+            content: "♥";
+            color: #ff6f8b; /* Matching the site's theme color */
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center py-3">What's the Plan?</h1>
+        <nav class="text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="page1.html">Make a Plan</a></li>
+                <li class="nav-item"><a class="nav-link" href="page2.html">Daily Diary</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <h2 class="text-center">Today's Tasks</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item"><input type="checkbox"> Morning walk</li>
+            <li class="list-group-item"><input type="checkbox"> Study for the exam</li>
+            <li class="list-group-item"><input type="checkbox"> Call a friend</li>
+            <li class="list-group-item"><input type="checkbox"> Work on the journal blog</li>
+        </ul>
+        
+        <h3 class="text-center">Add New Task:</h3>
+        <form class="mb-4">
+            <input type="text" id="task" name="task" class="form-control mb-2" placeholder="Enter a task">
+            <button type="submit" class="btn btn-primary">Add Task</button>
+            <button type="submit" class="btn btn-primary">Invite Friend</button>
+        </form>
+        <div class="text-center mt-4">
+            <img src="images/todo.png" alt="To-Do List Image" class="img-fluid rounded todo-image">
+        </div>
+        <h3 class="text-center">Previous Tasks</h3>
+        <div class="calendar">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Tasks Completed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dec 1, 2024</td>
+                        <td>Morning walk, Study for exam</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 30, 2024</td>
+                        <td>Call a friend, Prepare dinner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="text-center py-3">
+        <p>Webmaster: Zara | Date: 12/2/2024</p>
+        <p>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </p>
+        <p>This is a mock-up site project for IMED 1341.</p>
+    </footer>
+</body>
+</html>

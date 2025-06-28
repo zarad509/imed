@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home - Social Journaling">
+    <meta name="keywords" content="Home, Social Journaling, Feed">
+    <title>Home - Social Journaling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .feed {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .post {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background-color: #f8f1f1;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .post-content {
+            flex-grow: 1;
+        }
+
+        .post-header {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .post-text {
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .post-actions button {
+            border: none;
+            background-color: #ffb6c1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .post-actions button:hover {
+            background-color: #ff6f8b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center py-3">Your Social Journal Feed</h1>
+        <nav class="text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="page1.html">Make a Plan</a></li>
+                <li class="nav-item"><a class="nav-link" href="page2.html">Daily Diary</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <h2 class="text-center">See What Your Friends Are Up To!</h2>
+        <div class="feed">
+            <!-- Post 1 -->
+            <div class="post">
+                <img src="images/jane.jpg" alt="Jane's Profile Picture" class="profile-pic">
+                <div class="post-content">
+                    <p class="post-header">Jane Doe</p>
+                    <p class="post-text"><strong>New Journal Entry:</strong> Had an amazing day exploring the city!</p>
+                    <div class="post-actions">
+                        <button>Like</button>
+                        <button>Comment</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="post">
+                <img src="images/john.jpg" alt="John's Profile Picture" class="profile-pic">
+                <div class="post-content">
+                    <p class="post-header">John Smith</p>
+                    <p class="post-text"><strong>Plan:</strong> Complete my fitness goal, try a new recipe.</p>
+                    <div class="post-actions">
+                        <button>Like</button>
+                        <button>Comment</button>
+                        <button>Request to join</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="post">
+                <img src="images/elizabeth.jpg" alt="Elizabeth's Profile Picture" class="profile-pic">
+                <div class="post-content">
+                    <p class="post-header">Elizabeth Green</p>
+                    <p class="post-text"><strong>New Journal Entry:</strong> I went to the beach, and it was sooo cool!</p>
+                    <div class="post-actions">
+                        <button>Like</button>
+                        <button>Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-3">
+        <p>Webmaster: Zara | Date: 12/2/2024</p>
+        <p>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </p>
+        <p>This is a mock-up site project for IMED 1341.</p>
+    </footer>
+</body>
+</html>

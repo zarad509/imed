@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4e2d3; /* Soft, warm background */
+    color: #4b2e24; /* Rich brown for text */
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #ad501b; /* Deep brown */
+    color: #f9f4ef; /* Light text */
+}
+
+/* Custom styles for content containers */
+.w3-content {
+    max-width: 800px;
+    background-color: #fff7ec; /* Light beige for content blocks */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.w3-card-4 {
+    background-color: #fff7ec; /* Matches content container */
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 5px solid #8c5a3e; /* Accent border for cards */
+}
+
+/* Button Styling for Accordion and Back to Top */
+button.w3-button, footer .w3-button {
+    background-color: #8c5a3e; /* Deep brown */
+    color: #f9f4ef;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+.w3-table-all {
+    background-color: #fefaf5;
+    color: #4b2e24;
+    border-color: #8c5a3e;
+}
+
+/* Footer */
+footer {
+    background-color: #8c5a3e;
+    color: #f9f4ef;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Adjustments (optional) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+    .w3-content {
+        padding: 10px;
+    }
+}
